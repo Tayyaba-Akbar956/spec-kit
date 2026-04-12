@@ -7,6 +7,8 @@ This guide will help you get started with Spec-Driven Development using Spec Kit
 > - CLI: run the `specify` command (no leading slash) in your terminal.
 > - Slash commands (AI assistant): use `/speckit.specify`, `/speckit.plan`, etc., inside an AI assistant or editor that supports slash commands (for example, GitHub Copilot Chat). Do not remove the leading slash — these commands rely on the slash prefix to trigger the assistant correctly.
 >
+> **Note**: Spec Kit slash commands use the `/speckit.` prefix (for example, `/speckit.specify` and `/speckit.plan`). Use the `/speckit.` prefix for all slash commands.
+>
 > See the [VS Code Usage Guide](vscode-usage.md) for details on where to run each type of command.
 
 | Command Type | Where to Run | Example | Notes |
@@ -53,12 +55,6 @@ Example (slash command used in the assistant/chat):
 Note: Do NOT change or implement this spec; only return the spec text focusing on requirements and acceptance criteria.
 ```
 
-If you prefer the terminal, you can still run the CLI version (no leading slash):
-
-```bash
-specify "Build an application that can help me organize my photos in separate photo albums..."
-```
-
 ### 3. Create a Technical Implementation Plan
 
 Use the plan command to provide your tech stack and architecture choices.
@@ -88,7 +84,7 @@ Let the AI generate tasks, write code, run tests, and fix bugs — all from your
 
 ### Common Issues and Solutions
 
-- **Command not found**: Ensure `uvx` is installed (`pip install uvx`)
+- **Command not found**: Ensure `uv` is installed; `uvx` is included with `uv`
 - **Wrong script type**: Use `--script ps` (PowerShell) or `--script sh` (Bash) to override auto-selection
 - **Slash commands not working**: Verify your AI assistant supports slash commands and the `/speckit` prefix is included
 - **Environment errors**: Check Python/Node.js installation and PATH settings
@@ -187,10 +183,6 @@ Generate the implementation:
 
 ## Next Steps
 
-- Read the complete methodology in our 
-[documentation](docs/methodology.md)
-- Try the examples in the
- [samples repository](docs/samples.md)
-- Join our 
-[community](CONTRIBUTING.md)
-for tips and support
+- Read the [complete methodology](https://github.com/github/spec-kit/blob/main/spec-driven.md) for in-depth guidance
+- Check out [more examples](https://github.com/github/spec-kit/tree/main/templates) in the repository
+- Explore the [source code on GitHub](https://github.com/github/spec-kit)
