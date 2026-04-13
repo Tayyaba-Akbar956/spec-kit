@@ -35,7 +35,7 @@ uvx --from git+https://github.com/github/spec-kit.git specify init <PROJECT_NAME
 
 This is the quickest way to bootstrap a new project without modifying your global tool environment.
 
-> **Note**: `uvx` is included with [`uv`](https://docs.astral.sh/uv/getting-started/installation/). You do not need to install `uvx` separately — install `uv` and `uvx` is available automatically.
+> **Note**: `uvx` is included with [`uv`](https://docs.astral.sh/uv/getting-started/installation/). You do not need to install `uvx` separately — install `uv` and `uvx` is available automatically. Do **not** use `pip install uvx`.
 
 ## Running the CLI Module Directly (Development / Local Checkout)
 
