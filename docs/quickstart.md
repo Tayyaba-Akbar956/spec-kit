@@ -61,7 +61,7 @@ specify "Build an application that can help me organize my photos in separate ph
 
 ### 3. Create a Technical Implementation Plan
 
-Use the plan command to provide your tech stack and architecture choices.
+Use the `/speckit.plan` slash command (in an AI assistant or editor that supports slash commands) to provide your tech stack and architecture choices.
 
 ```text
 /speckit.plan The application uses Vite with minimal number of libraries. Use vanilla HTML, CSS, and JavaScript as much as possible. Images are not uploaded anywhere and metadata is stored in a local SQLite database.
@@ -88,7 +88,7 @@ Let the AI generate tasks, write code, run tests, and fix bugs — all from your
 
 ### Common Issues and Solutions
 
-- **Command not found**: Ensure `uvx` is installed (`pip install uvx`)
+- **Command not found**: Ensure `uv` is installed; `uvx` is included with `uv` (see [uv installation docs](https://docs.astral.sh/uv/))
 - **Wrong script type**: Use `--script ps` (PowerShell) or `--script sh` (Bash) to override auto-selection
 - **Slash commands not working**: Verify your AI assistant supports slash commands and the `/speckit` prefix is included
 - **Environment errors**: Check Python/Node.js installation and PATH settings
@@ -174,7 +174,7 @@ to be doing that are obvious from reading this. Because I don't know if there's 
 Generate the implementation:
 
 ```text
-/speckit.implement specs/002-create-taskify/plan.md
+/speckit.implement
 ```
 
 ## Key Principles
